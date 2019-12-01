@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C376728B239402C000EB7A0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376728A239402C000EB7A0B /* AppDelegate.swift */; };
+		C376728D239402C000EB7A0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376728C239402C000EB7A0B /* SceneDelegate.swift */; };
+		C376728F239402C000EB7A0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376728E239402C000EB7A0B /* ViewController.swift */; };
+		C3767292239402C000EB7A0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3767290239402C000EB7A0B /* Main.storyboard */; };
+		C3767294239402C300EB7A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3767293239402C300EB7A0B /* Assets.xcassets */; };
+		C3767297239402C300EB7A0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3767295239402C300EB7A0B /* LaunchScreen.storyboard */; };
+		C37672A2239402C300EB7A0B /* Bunq_Demo_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37672A1239402C300EB7A0B /* Bunq_Demo_AppTests.swift */; };
+		C37672AD239402C400EB7A0B /* Bunq_Demo_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37672AC239402C300EB7A0B /* Bunq_Demo_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C376729E239402C300EB7A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C376727F239402C000EB7A0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3767286239402C000EB7A0B;
+			remoteInfo = "Bunq Demo App";
+		};
+		C37672A9239402C300EB7A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C376727F239402C000EB7A0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3767286239402C000EB7A0B;
+			remoteInfo = "Bunq Demo App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3767287239402C000EB7A0B /* Bunq Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bunq Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C376728A239402C000EB7A0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C376728C239402C000EB7A0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C376728E239402C000EB7A0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3767291239402C000EB7A0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3767293239402C300EB7A0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3767296239402C300EB7A0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3767298239402C300EB7A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C376729D239402C300EB7A0B /* Bunq Demo AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bunq Demo AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37672A1239402C300EB7A0B /* Bunq_Demo_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bunq_Demo_AppTests.swift; sourceTree = "<group>"; };
+		C37672A3239402C300EB7A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C37672A8239402C300EB7A0B /* Bunq Demo AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bunq Demo AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37672AC239402C300EB7A0B /* Bunq_Demo_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bunq_Demo_AppUITests.swift; sourceTree = "<group>"; };
+		C37672AE239402C400EB7A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3767284239402C000EB7A0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C376729A239402C300EB7A0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37672A5239402C300EB7A0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C376727E239402C000EB7A0B = {
+			isa = PBXGroup;
+			children = (
+				C3767289239402C000EB7A0B /* Bunq Demo App */,
+				C37672A0239402C300EB7A0B /* Bunq Demo AppTests */,
+				C37672AB239402C300EB7A0B /* Bunq Demo AppUITests */,
+				C3767288239402C000EB7A0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3767288239402C000EB7A0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3767287239402C000EB7A0B /* Bunq Demo App.app */,
+				C376729D239402C300EB7A0B /* Bunq Demo AppTests.xctest */,
+				C37672A8239402C300EB7A0B /* Bunq Demo AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3767289239402C000EB7A0B /* Bunq Demo App */ = {
+			isa = PBXGroup;
+			children = (
+				C376728A239402C000EB7A0B /* AppDelegate.swift */,
+				C376728C239402C000EB7A0B /* SceneDelegate.swift */,
+				C376728E239402C000EB7A0B /* ViewController.swift */,
+				C3767290239402C000EB7A0B /* Main.storyboard */,
+				C3767293239402C300EB7A0B /* Assets.xcassets */,
+				C3767295239402C300EB7A0B /* LaunchScreen.storyboard */,
+				C3767298239402C300EB7A0B /* Info.plist */,
+			);
+			path = "Bunq Demo App";
+			sourceTree = "<group>";
+		};
+		C37672A0239402C300EB7A0B /* Bunq Demo AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C37672A1239402C300EB7A0B /* Bunq_Demo_AppTests.swift */,
+				C37672A3239402C300EB7A0B /* Info.plist */,
+			);
+			path = "Bunq Demo AppTests";
+			sourceTree = "<group>";
+		};
+		C37672AB239402C300EB7A0B /* Bunq Demo AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C37672AC239402C300EB7A0B /* Bunq_Demo_AppUITests.swift */,
+				C37672AE239402C400EB7A0B /* Info.plist */,
+			);
+			path = "Bunq Demo AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3767286239402C000EB7A0B /* Bunq Demo App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C37672B1239402C400EB7A0B /* Build configuration list for PBXNativeTarget "Bunq Demo App" */;
+			buildPhases = (
+				C3767283239402C000EB7A0B /* Sources */,
+				C3767284239402C000EB7A0B /* Frameworks */,
+				C3767285239402C000EB7A0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bunq Demo App";
+			productName = "Bunq Demo App";
+			productReference = C3767287239402C000EB7A0B /* Bunq Demo App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C376729C239402C300EB7A0B /* Bunq Demo AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C37672B4239402C400EB7A0B /* Build configuration list for PBXNativeTarget "Bunq Demo AppTests" */;
+			buildPhases = (
+				C3767299239402C300EB7A0B /* Sources */,
+				C376729A239402C300EB7A0B /* Frameworks */,
+				C376729B239402C300EB7A0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C376729F239402C300EB7A0B /* PBXTargetDependency */,
+			);
+			name = "Bunq Demo AppTests";
+			productName = "Bunq Demo AppTests";
+			productReference = C376729D239402C300EB7A0B /* Bunq Demo AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C37672A7239402C300EB7A0B /* Bunq Demo AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C37672B7239402C400EB7A0B /* Build configuration list for PBXNativeTarget "Bunq Demo AppUITests" */;
+			buildPhases = (
+				C37672A4239402C300EB7A0B /* Sources */,
+				C37672A5239402C300EB7A0B /* Frameworks */,
+				C37672A6239402C300EB7A0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C37672AA239402C300EB7A0B /* PBXTargetDependency */,
+			);
+			name = "Bunq Demo AppUITests";
+			productName = "Bunq Demo AppUITests";
+			productReference = C37672A8239402C300EB7A0B /* Bunq Demo AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C376727F239402C000EB7A0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Emre;
+				TargetAttributes = {
+					C3767286239402C000EB7A0B = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					C376729C239402C300EB7A0B = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = C3767286239402C000EB7A0B;
+					};
+					C37672A7239402C300EB7A0B = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = C3767286239402C000EB7A0B;
+					};
+				};
+			};
+			buildConfigurationList = C3767282239402C000EB7A0B /* Build configuration list for PBXProject "Bunq Demo App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C376727E239402C000EB7A0B;
+			productRefGroup = C3767288239402C000EB7A0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3767286239402C000EB7A0B /* Bunq Demo App */,
+				C376729C239402C300EB7A0B /* Bunq Demo AppTests */,
+				C37672A7239402C300EB7A0B /* Bunq Demo AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3767285239402C000EB7A0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3767297239402C300EB7A0B /* LaunchScreen.storyboard in Resources */,
+				C3767294239402C300EB7A0B /* Assets.xcassets in Resources */,
+				C3767292239402C000EB7A0B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C376729B239402C300EB7A0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37672A6239402C300EB7A0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3767283239402C000EB7A0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C376728F239402C000EB7A0B /* ViewController.swift in Sources */,
+				C376728B239402C000EB7A0B /* AppDelegate.swift in Sources */,
+				C376728D239402C000EB7A0B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3767299239402C300EB7A0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37672A2239402C300EB7A0B /* Bunq_Demo_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37672A4239402C300EB7A0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37672AD239402C400EB7A0B /* Bunq_Demo_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C376729F239402C300EB7A0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3767286239402C000EB7A0B /* Bunq Demo App */;
+			targetProxy = C376729E239402C300EB7A0B /* PBXContainerItemProxy */;
+		};
+		C37672AA239402C300EB7A0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3767286239402C000EB7A0B /* Bunq Demo App */;
+			targetProxy = C37672A9239402C300EB7A0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3767290239402C000EB7A0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3767291239402C000EB7A0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3767295239402C300EB7A0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3767296239402C300EB7A0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C37672AF239402C400EB7A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C37672B0239402C400EB7A0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C37672B2239402C400EB7A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAQJUYBRTY;
+				INFOPLIST_FILE = "Bunq Demo App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emreonder.Bunq-Demo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C37672B3239402C400EB7A0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAQJUYBRTY;
+				INFOPLIST_FILE = "Bunq Demo App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emreonder.Bunq-Demo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C37672B5239402C400EB7A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAQJUYBRTY;
+				INFOPLIST_FILE = "Bunq Demo AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emreonder.Bunq-Demo-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bunq Demo App.app/Bunq Demo App";
+			};
+			name = Debug;
+		};
+		C37672B6239402C400EB7A0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAQJUYBRTY;
+				INFOPLIST_FILE = "Bunq Demo AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emreonder.Bunq-Demo-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bunq Demo App.app/Bunq Demo App";
+			};
+			name = Release;
+		};
+		C37672B8239402C400EB7A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAQJUYBRTY;
+				INFOPLIST_FILE = "Bunq Demo AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emreonder.Bunq-Demo-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bunq Demo App";
+			};
+			name = Debug;
+		};
+		C37672B9239402C400EB7A0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAQJUYBRTY;
+				INFOPLIST_FILE = "Bunq Demo AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emreonder.Bunq-Demo-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bunq Demo App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3767282239402C000EB7A0B /* Build configuration list for PBXProject "Bunq Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37672AF239402C400EB7A0B /* Debug */,
+				C37672B0239402C400EB7A0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C37672B1239402C400EB7A0B /* Build configuration list for PBXNativeTarget "Bunq Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37672B2239402C400EB7A0B /* Debug */,
+				C37672B3239402C400EB7A0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C37672B4239402C400EB7A0B /* Build configuration list for PBXNativeTarget "Bunq Demo AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37672B5239402C400EB7A0B /* Debug */,
+				C37672B6239402C400EB7A0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C37672B7239402C400EB7A0B /* Build configuration list for PBXNativeTarget "Bunq Demo AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37672B8239402C400EB7A0B /* Debug */,
+				C37672B9239402C400EB7A0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C376727F239402C000EB7A0B /* Project object */;
+}
