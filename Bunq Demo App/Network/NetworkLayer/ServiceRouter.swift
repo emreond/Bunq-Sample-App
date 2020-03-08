@@ -41,6 +41,12 @@ class ServiceRouter: ServiceConfiguration {
         self.path = path
     }
     
+    init(method: HTTPMethod, path: String,authKey: String) {
+        self.method = method
+        self.path = path
+        self.authKey = authKey
+    }
+    
     init(method: HTTPMethod, path: String, parameters: Data, timeoutSec: Double) {
         self.method = method
         self.path = path

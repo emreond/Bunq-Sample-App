@@ -13,7 +13,6 @@ class ServiceCaller {
     static func performRequest<T: Decodable>(route: ServiceRouter, completion: @escaping (Result<T>) -> Void) {
         CustomServiceManager.instance.sessionManager.request(route).responseJSON(completionHandler: { result in
             if let error = result.error {
-                //NOTE: Common error handling for network requests. This can be put in network service classes too If custom handling needed.
                 if let unwrappedResponse = result.response {
                     let error = ServiceError.handle(error: error, statusCode: unwrappedResponse.statusCode)
                     completion(.error(error))
@@ -26,7 +25,8 @@ class ServiceCaller {
                 do {
                     let output = try newJSONDecoder().decode(T.self, from: data)
                     completion(.success(output))
-                } catch {
+                } catch let error {
+                    print(error)
                     do {
                         let errorOutput = try newJSONDecoder().decode(BunqError.self, from: data)
                         completion(.error(errorOutput))

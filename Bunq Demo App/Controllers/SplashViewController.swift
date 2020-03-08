@@ -17,9 +17,31 @@ class SplashViewController: UIViewController, SplashViewProtocol {
         s.translatesAutoresizingMaskIntoConstraints = false
         return s
     }()
-    private let progressBar = LinearProgressView()
-    private let loadingText = UILabel()
-    private let logoImage = UIImageView()
+    private let progressBar: LinearProgressView = {
+        let p = LinearProgressView()
+        p.translatesAutoresizingMaskIntoConstraints = false
+        p.barColor = UIColor.white
+        p.trackColor = Colors.goodBlue
+        p.minimumValue = 0.0
+        p.maximumValue = 100.0
+        return p
+    }()
+    private let loadingText: UILabel = {
+        let l = UILabel()
+        l.translatesAutoresizingMaskIntoConstraints = false
+        l.text = "Printing some money just for you..."
+        l.textColor = UIColor.white
+        l.font = UIFont.boldSystemFont(ofSize: 20)
+        return l
+    }()
+    
+    private let logoImage: UIImageView = {
+        let l = UIImageView()
+        l.translatesAutoresizingMaskIntoConstraints = false
+        l.contentMode = .scaleAspectFit
+        l.image = UIImage(named: "somelogo")
+        return l
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,20 +105,13 @@ class SplashViewController: UIViewController, SplashViewProtocol {
         horizontalStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
         //Logo
-        logoImage.translatesAutoresizingMaskIntoConstraints = false
-        logoImage.contentMode = .scaleAspectFit
-        logoImage.image = UIImage(named: "logo")
         view.addSubview(logoImage)
         logoImage.centerYAnchor.constraint(equalTo: view.centerYAnchor,constant: -200).isActive = true
         logoImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        logoImage.heightAnchor.constraint(equalToConstant: 150).isActive = true
-        
+        logoImage.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 40).isActive = true
+        logoImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
+
         //Progress Bar
-        progressBar.translatesAutoresizingMaskIntoConstraints = false
-        progressBar.barColor = UIColor.white
-        progressBar.trackColor = Colors.goodBlue
-        progressBar.minimumValue = 0.0
-        progressBar.maximumValue = 100.0
         view.addSubview(progressBar)
         progressBar.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.7).isActive = true
         progressBar.heightAnchor.constraint(equalToConstant: 15).isActive = true
@@ -104,10 +119,6 @@ class SplashViewController: UIViewController, SplashViewProtocol {
         progressBar.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         progressBar.alpha = 0.0
         
-        loadingText.translatesAutoresizingMaskIntoConstraints = false
-        loadingText.text = "Printing some money just for you..."
-        loadingText.textColor = UIColor.white
-        loadingText.font = UIFont.boldSystemFont(ofSize: 20)
         view.addSubview(loadingText)
         loadingText.topAnchor.constraint(equalTo: progressBar.bottomAnchor, constant: 10).isActive = true
         loadingText.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
