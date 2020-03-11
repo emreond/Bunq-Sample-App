@@ -49,6 +49,8 @@ struct UserPerson: Decodable {
     let lastName: String
     let legalName: String
     let gender: String
+    let dailyLimit: Decimal
+    let dailyLimitCurrency: String
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -66,5 +68,34 @@ struct UserPerson: Decodable {
         case lastName = "last_name"
         case legalName = "legal_name"
         case gender = "gender"
+        case dailyLimit = "daily_limit_without_confirmation_login"
+        case value = "value"
+        case currency = "currency"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        self.id = try container.decode(Int.self, forKey: .id)
+        self.created = try container.decode(String.self, forKey: .created)
+        self.updated = try container.decode(String.self, forKey: .updated)
+        self.status = try container.decode(String.self, forKey: .status)
+        self.subStatus = try container.decode(String.self, forKey: .subStatus)
+        self.publicuuid = try container.decode(String.self, forKey: .publicuuid)
+        self.displayName = try container.decode(String.self, forKey: .displayName)
+        self.publicNickName = try container.decode(String.self, forKey: .publicNickName)
+        self.language = try container.decode(String.self, forKey: .language)
+        self.region = try container.decode(String.self, forKey: .region)
+        self.sessionTimeOut = try container.decode(Int.self, forKey: .sessionTimeOut)
+        self.firstName = try container.decode(String.self, forKey: .firstName)
+        self.lastName = try container.decode(String.self, forKey: .lastName)
+        self.legalName = try container.decode(String.self, forKey: .legalName)
+        self.gender = try container.decode(String.self, forKey: .gender)
+        
+        let subCont = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .dailyLimit)
+        self.dailyLimitCurrency = try subCont.decode(String.self, forKey: .currency)
+        let dailyLimitStr = try subCont.decode(String.self, forKey: .value)
+        //Handle Error
+        self.dailyLimit = Decimal(string: dailyLimitStr)!
     }
 }

@@ -32,18 +32,6 @@ struct InstallationModel: Decodable {
         }
     }
 }
-struct Response: Decodable {
-    let id: ID?
-    let token: Token?
-    let serverPublicKey: ServerPublicKey?
-    let userPerson: UserPerson?
-    enum CodingKeys: String, CodingKey {
-        case id = "Id"
-        case token = "Token"
-        case serverPublicKey = "ServerPublicKey"
-        case userPerson = "UserPerson"
-    }
-}
 
 struct Token: Decodable {
     let token: String

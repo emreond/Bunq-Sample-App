@@ -16,7 +16,6 @@
                 <outlet property="descriptionLbl" destination="6KY-oF-06t" id="pmb-c0-rNh"/>
                 <outlet property="ibanLbl" destination="f3J-oE-KIX" id="qUw-L0-VKd"/>
                 <outlet property="nameLabel" destination="YlS-yA-qcN" id="s0C-kj-ga5"/>
-                <outlet property="reqMoneyBtn" destination="O0E-jd-jCo" id="NfF-qT-LyI"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -113,18 +112,8 @@
                         <constraint firstAttribute="trailing" secondItem="4am-Q5-2EX" secondAttribute="trailing" constant="20" id="qGi-01-dbb"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0E-jd-jCo">
-                    <rect key="frame" x="20" y="430" width="374" height="40"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="sDD-05-3nV"/>
-                    </constraints>
-                    <state key="normal" title="Request Free Money :)">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                </button>
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWA-1X-pxf">
-                    <rect key="frame" x="20" y="389.5" width="374" height="20.5"/>
+                    <rect key="frame" x="20" y="449.5" width="374" height="20.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Your Daily Limit: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ki-Vs-fxV">
                             <rect key="frame" x="0.0" y="0.0" width="289.5" height="20.5"/>
@@ -143,18 +132,15 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="O0E-jd-jCo" secondAttribute="bottom" constant="20" id="3vR-Ya-Ojf"/>
+                <constraint firstAttribute="bottom" secondItem="jWA-1X-pxf" secondAttribute="bottom" constant="20" id="AFR-cp-kEv"/>
                 <constraint firstAttribute="trailing" secondItem="jWA-1X-pxf" secondAttribute="trailing" constant="20" id="DdI-7l-toW"/>
                 <constraint firstItem="YlS-yA-qcN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="G0O-5T-W7A"/>
                 <constraint firstItem="353-8p-2NK" firstAttribute="top" secondItem="YlS-yA-qcN" secondAttribute="bottom" constant="20" id="GJc-Wp-W6a"/>
-                <constraint firstAttribute="trailing" secondItem="O0E-jd-jCo" secondAttribute="trailing" constant="20" id="KqO-XQ-nDj"/>
                 <constraint firstItem="353-8p-2NK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="V7w-HC-ghE"/>
-                <constraint firstItem="O0E-jd-jCo" firstAttribute="top" secondItem="jWA-1X-pxf" secondAttribute="bottom" constant="20" id="ZVK-yI-FaL"/>
                 <constraint firstItem="jWA-1X-pxf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="eDC-A0-pMl"/>
                 <constraint firstItem="YlS-yA-qcN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="44" id="fKh-CD-qfA"/>
                 <constraint firstItem="jWA-1X-pxf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="353-8p-2NK" secondAttribute="bottom" constant="20" id="u8z-k3-VBC"/>
                 <constraint firstAttribute="trailing" secondItem="353-8p-2NK" secondAttribute="trailing" constant="20" id="vU3-GN-xwn"/>
-                <constraint firstItem="O0E-jd-jCo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="zIG-I4-hps"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="137.68115942028987" y="16.741071428571427"/>

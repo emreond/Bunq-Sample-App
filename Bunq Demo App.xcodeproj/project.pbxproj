@@ -10,6 +10,12 @@
 		06E6BD139F6CAE7DB7FEE8D8 /* Pods_Bunq_Demo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1E7226C8C225A277CFB08C /* Pods_Bunq_Demo_App.framework */; };
 		5659BC4EB6F4504730C2F34A /* Pods_Bunq_Demo_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E081942AEE67E7C49FF3EFD /* Pods_Bunq_Demo_AppTests.framework */; };
 		B1C9740CDDE8725906D68C6B /* Pods_Bunq_Demo_App_Bunq_Demo_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DD469D5F668786A1C33B6A /* Pods_Bunq_Demo_App_Bunq_Demo_AppUITests.framework */; };
+		C33FDF552413BC9900C65C3F /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33FDF542413BC9900C65C3F /* ProfileView.xib */; };
+		C33FDF572413BCD400C65C3F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33FDF562413BCD400C65C3F /* ProfileView.swift */; };
+		C33FDF5A2413C6FD00C65C3F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33FDF592413C6FD00C65C3F /* MainViewModel.swift */; };
+		C33FDF5C2413D09500C65C3F /* MonetaryAccountBankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33FDF5B2413D09500C65C3F /* MonetaryAccountBankModel.swift */; };
+		C33FDF5E2413E89500C65C3F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33FDF5D2413E89500C65C3F /* Response.swift */; };
+		C33FDF602413EAE200C65C3F /* ListMoneyAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33FDF5F2413EAE200C65C3F /* ListMoneyAccounts.swift */; };
 		C376728B239402C000EB7A0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376728A239402C000EB7A0B /* AppDelegate.swift */; };
 		C376728F239402C000EB7A0B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376728E239402C000EB7A0B /* SplashViewController.swift */; };
 		C3767294239402C300EB7A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3767293239402C300EB7A0B /* Assets.xcassets */; };
@@ -65,6 +71,12 @@
 		6F53E02A10A3059BDCD2A923 /* Pods-Bunq Demo App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bunq Demo App.release.xcconfig"; path = "Target Support Files/Pods-Bunq Demo App/Pods-Bunq Demo App.release.xcconfig"; sourceTree = "<group>"; };
 		7C1E7226C8C225A277CFB08C /* Pods_Bunq_Demo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bunq_Demo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BE8529FEB6A9E4D1D8CABA /* Pods-Bunq Demo AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bunq Demo AppTests.release.xcconfig"; path = "Target Support Files/Pods-Bunq Demo AppTests/Pods-Bunq Demo AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		C33FDF542413BC9900C65C3F /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		C33FDF562413BCD400C65C3F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C33FDF592413C6FD00C65C3F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		C33FDF5B2413D09500C65C3F /* MonetaryAccountBankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetaryAccountBankModel.swift; sourceTree = "<group>"; };
+		C33FDF5D2413E89500C65C3F /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		C33FDF5F2413EAE200C65C3F /* ListMoneyAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMoneyAccounts.swift; sourceTree = "<group>"; };
 		C3767287239402C000EB7A0B /* Bunq Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bunq Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C376728A239402C000EB7A0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C376728E239402C000EB7A0B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +166,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C33FDF582413C6E800C65C3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C33FDF542413BC9900C65C3F /* ProfileView.xib */,
+				C33FDF562413BCD400C65C3F /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C376727E239402C000EB7A0B = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +202,7 @@
 			children = (
 				C376728A239402C000EB7A0B /* AppDelegate.swift */,
 				C3FFEB4223D3064600BF8B72 /* Controllers */,
+				C33FDF582413C6E800C65C3F /* Views */,
 				C3FFEB4123D3062F00BF8B72 /* Helpers */,
 				C37672C82394042C00EB7A0B /* Network */,
 				C3FFEB4323D306AA00BF8B72 /* Resources */,
@@ -210,13 +232,13 @@
 			isa = PBXGroup;
 			children = (
 				C3FFEB4423D306E400BF8B72 /* Models */,
-				C37672C92394046400EB7A0B /* BaseService */,
+				C37672C92394046400EB7A0B /* NetworkLayer */,
 				C3CA01DA23C0CDF8009F4AD9 /* Services */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		C37672C92394046400EB7A0B /* BaseService */ = {
+		C37672C92394046400EB7A0B /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
 				C37672BC2394042600EB7A0B /* ResponseModel.swift */,
@@ -227,13 +249,14 @@
 				C37672C02394042700EB7A0B /* ServiceManager.swift */,
 				C37672BE2394042600EB7A0B /* ServiceRouter.swift */,
 			);
-			path = BaseService;
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 		C3CA01DA23C0CDF8009F4AD9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				C37672CC23942EF900EB7A0B /* SandboxService.swift */,
+				C33FDF5F2413EAE200C65C3F /* ListMoneyAccounts.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -255,6 +278,7 @@
 				C376728E239402C000EB7A0B /* SplashViewController.swift */,
 				C37A014E23DD981F007361AA /* SplashViewModel.swift */,
 				C3B8F6DB240C14A30092FCB1 /* MainViewController.swift */,
+				C33FDF592413C6FD00C65C3F /* MainViewModel.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -280,6 +304,8 @@
 				C3FFEB3B23D302A300BF8B72 /* BunqErrorModel.swift */,
 				C3A3B71E23DCC91600E36798 /* KeyPairs.swift */,
 				C37A015023DDA17B007361AA /* UserModel.swift */,
+				C33FDF5B2413D09500C65C3F /* MonetaryAccountBankModel.swift */,
+				C33FDF5D2413E89500C65C3F /* Response.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -394,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3767297239402C300EB7A0B /* LaunchScreen.storyboard in Resources */,
+				C33FDF552413BC9900C65C3F /* ProfileView.xib in Resources */,
 				C3A3B71D23DC887C00E36798 /* signature.js in Resources */,
 				C3767294239402C300EB7A0B /* Assets.xcassets in Resources */,
 				C3CA01DC23C0DD5D009F4AD9 /* rsakeygenerator.js in Resources */,
@@ -530,7 +557,9 @@
 				C38F805E23D48529003DCE59 /* JSON+Extension.swift in Sources */,
 				C37672C12394042700EB7A0B /* ServiceConstants.swift in Sources */,
 				C37A014F23DD981F007361AA /* SplashViewModel.swift in Sources */,
+				C33FDF5C2413D09500C65C3F /* MonetaryAccountBankModel.swift in Sources */,
 				C376728F239402C000EB7A0B /* SplashViewController.swift in Sources */,
+				C33FDF602413EAE200C65C3F /* ListMoneyAccounts.swift in Sources */,
 				C37672CD23942EFA00EB7A0B /* SandboxService.swift in Sources */,
 				C37672C52394042700EB7A0B /* ServiceRouter.swift in Sources */,
 				C37672CB2394065B00EB7A0B /* SandBoxUserModel.swift in Sources */,
@@ -541,11 +570,14 @@
 				C3D85E5723C218C500E003D9 /* InstallationModel.swift in Sources */,
 				C37672C62394042700EB7A0B /* ServiceConfiguration.swift in Sources */,
 				C3FFEB4023D3062A00BF8B72 /* JSCommunicationHandler.swift in Sources */,
+				C33FDF572413BCD400C65C3F /* ProfileView.swift in Sources */,
 				C37A015123DDA17B007361AA /* UserModel.swift in Sources */,
 				C3FFEB3E23D3060C00BF8B72 /* DeviceServerModel.swift in Sources */,
 				C3A3B71F23DCC91600E36798 /* KeyPairs.swift in Sources */,
+				C33FDF5E2413E89500C65C3F /* Response.swift in Sources */,
 				C3B8F6E0240C37520092FCB1 /* LinearProgressView.swift in Sources */,
 				C37672C42394042700EB7A0B /* ServiceErrorHandler.swift in Sources */,
+				C33FDF5A2413C6FD00C65C3F /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

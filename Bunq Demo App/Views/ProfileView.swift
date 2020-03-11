@@ -16,7 +16,6 @@ class ProfileView: UIView {
     @IBOutlet weak var ibanLbl: UILabel!
     @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var dailyLimitLbl: UILabel!
-    @IBOutlet weak var reqMoneyBtn: UIButton!
     @IBOutlet weak var accountView: UIView!
     @IBOutlet var contentView: UIView!
     
@@ -47,7 +46,6 @@ class ProfileView: UIView {
         contentView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         
         accountView.layer.cornerRadius = 6.0
-        reqMoneyBtn.layer.cornerRadius = 6.0
     }
 
 }

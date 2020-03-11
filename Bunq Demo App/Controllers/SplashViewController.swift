@@ -77,11 +77,11 @@ class SplashViewController: UIViewController, SplashViewProtocol {
                 }, completion: { _ in
                     if (i == 1) {
                         //TODO: Make this a class
-                        guard let keyWindow = UIApplication.shared.keyWindow else { return }
-                        let navController = UINavigationController(rootViewController: MainViewController())
+                        guard let keyWindow = UIApplication.shared.keyWindow, let unwrappedUserModel = self.viewModel.getUserModel(), let unwrappedAccount = self.viewModel.getBankAccount() else { return }
+                        let mainViewModel = MainViewModel(userModel: unwrappedUserModel,account: unwrappedAccount)
+                        let navController = UINavigationController(rootViewController: MainViewController(viewModel: mainViewModel))
                         navController.isNavigationBarHidden = true
                         navController.navigationBar.isTranslucent = false
-                        navController.navigationBar.backgroundColor = Colors.goodBlue
                         keyWindow.rootViewController = navController
                     }
             })

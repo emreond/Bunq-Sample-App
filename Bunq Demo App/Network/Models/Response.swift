@@ -19,6 +19,6 @@ struct Response: Decodable {
         case token = "Token"
         case serverPublicKey = "ServerPublicKey"
         case userPerson = "UserPerson"
-        case monetaryAccountModel = "MonetaryAccountBankModel"
+        case monetaryAccountModel = "MonetaryAccountBank"
     }
 }

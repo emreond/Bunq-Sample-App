@@ -9,16 +9,19 @@
 import Foundation
 import PromiseKit
 
-protocol SplashViewProtocol {
+protocol SplashViewProtocol: AnyObject {
     func updateProgress(with val: Float)
 }
 class SplashViewModel {
     
     private var keyPairs: KeyPairs
-    private var userModel: SandBoxUserModel?
+    private var sandboxUserModel: SandBoxUserModel?
+    private var userModel: UserModel?
     private var initModel: InstallationModel?
+    private var userAccount: MonetaryAccountBankModel?
     
-    var delegate: SplashViewProtocol?
+    weak var delegate: SplashViewProtocol?
+    
     init?(del: SplashViewProtocol) {
         self.delegate = del
         if let jsSourcePath = Bundle.main.url(forResource: "rsakeygenerator", withExtension: "js") {
@@ -38,28 +41,39 @@ class SplashViewModel {
     
     func callService(completionHandler: @escaping (Result<UserModel>) -> Void) {
         SandboxService.createsandboxUser().then { userModel -> Promise<InstallationModel> in
-            self.userModel = userModel
+            self.sandboxUserModel = userModel
             self.delegate?.updateProgress(with: 30)
             return SandboxService.initializeClient(publicKey: self.keyPairs.publicKey)
         }.then { initModel -> Promise<DeviceServerResponseModel> in
             self.initModel = initModel
             self.delegate?.updateProgress(with: 60)
-            if let unwrappedUserModel = self.userModel {
+            if let unwrappedUserModel = self.sandboxUserModel {
                 return SandboxService.deviceServerServiceCaller(authKey: initModel.token.token,apiKey:unwrappedUserModel.apiKey,privaKey: self.keyPairs.privateKey)
             }
             throw ServiceError.handleParseError()
         }.then { serverResponseModel -> Promise<UserModel> in
             self.delegate?.updateProgress(with: 90)
-            if let unwrappedInitModel = self.initModel, let unwrappedUserModel = self.userModel {
+            if let unwrappedInitModel = self.initModel, let unwrappedUserModel = self.sandboxUserModel {
                 return SandboxService.sessionServiceCaller(authKey: unwrappedInitModel.token.token, apiKey: unwrappedUserModel.apiKey, privaKey: self.keyPairs.privateKey)
             }
             throw ServiceError.handleParseError()
-        }.done { userModel in
+        }.then { userModel -> Promise<MonetaryAccountBankModel>  in
+            self.userModel = userModel
+            return ListMoneyAccounts.getMoneyAccounts(token: userModel.token.token,userId: userModel.userModel.id)
+        }.done { account in
+            self.userAccount = account
             self.delegate?.updateProgress(with: 100)
-            completionHandler(Result.success(userModel))
+            completionHandler(Result.success(self.userModel!))
         }.catch { error in
             completionHandler(Result.error(error))
         }
+    }
+    
+    func getUserModel() -> UserModel? {
+        return self.userModel
+    }
+    func getBankAccount() -> MonetaryAccountBankModel? {
+        return self.userAccount
     }
     
 }
