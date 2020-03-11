@@ -92,6 +92,7 @@ class SplashViewController: UIViewController, SplashViewProtocol {
     private func prepareUI() {
         //Background
         let bunqRainbowColors = Colors.bunqGreens + Colors.bunqBlues + Colors.bunqRed
+        //TODO: Change this to CAGradientLayer
         for color in bunqRainbowColors {
             let v = UIView()
             v.backgroundColor = color
