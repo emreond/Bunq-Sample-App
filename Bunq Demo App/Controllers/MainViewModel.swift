@@ -18,12 +18,6 @@ class MainViewModel {
         }
     }
     
-    var balance: String {
-        get {
-            return "10 EUR"
-        }
-    }
-    
     var dailyLimit: String {
         get {
             return "\(userModel.userModel.dailyLimit) \(userModel.userModel.dailyLimitCurrency)"
