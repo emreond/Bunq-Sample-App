@@ -8,15 +8,13 @@
 
 import UIKit
 import PromiseKit
-class SplashViewController: UIViewController, SplashViewProtocol {
+class SplashViewController: UIViewController, SplashViewProtocol, BunqViewProtocol {
+    
     
     private var viewModel: SplashViewModel!
-    private let horizontalStackView: UIStackView = {
-        let s = UIStackView()
-        s.distribution = .fillEqually
-        s.translatesAutoresizingMaskIntoConstraints = false
-        return s
-    }()
+
+    private let bunqView = BunqView()
+    
     private let progressBar: LinearProgressView = {
         let p = LinearProgressView()
         p.translatesAutoresizingMaskIntoConstraints = false
@@ -68,42 +66,27 @@ class SplashViewController: UIViewController, SplashViewProtocol {
             self.loadingText.alpha = 0.0
             self.logoImage.alpha = 0.0
         }
-        var delay = 0.0
-        for i in (1..<horizontalStackView.arrangedSubviews.count).reversed() {
-            UIView.animate(withDuration: 0.5, delay: delay, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: UIView.AnimationOptions.init(), animations: { [unowned self] in
-                self.horizontalStackView.arrangedSubviews[i].isHidden = true
-                self.horizontalStackView.arrangedSubviews[i].alpha = 0
-                self.horizontalStackView.layoutIfNeeded()
-                }, completion: { _ in
-                    if (i == 1) {
-                        //TODO: Make this a class
-                        guard let keyWindow = UIApplication.shared.keyWindow, let unwrappedUserModel = self.viewModel.getUserModel(), let unwrappedAccount = self.viewModel.getBankAccount() else { return }
-                        let mainViewModel = MainViewModel(userModel: unwrappedUserModel,account: unwrappedAccount)
-                        let navController = UINavigationController(rootViewController: MainViewController(viewModel: mainViewModel))
-                        navController.isNavigationBarHidden = true
-                        navController.navigationBar.isTranslucent = false
-                        keyWindow.rootViewController = navController
-                    }
-            })
-            delay += 0.15
-        }
+        bunqView.animateView()
+    }
+    
+    func animationFinished() {
+        guard let keyWindow = UIApplication.shared.keyWindow, let unwrappedUserModel = self.viewModel.getUserModel(), let unwrappedAccount = self.viewModel.getBankAccount() else { return }
+        let mainViewModel = MainViewModel(userModel: unwrappedUserModel,account: unwrappedAccount)
+        let navController = UINavigationController(rootViewController: MainViewController(viewModel: mainViewModel))
+        navController.isNavigationBarHidden = true
+        navController.navigationBar.isTranslucent = false
+        keyWindow.rootViewController = navController
     }
     
     private func prepareUI() {
         //Background
-        let bunqRainbowColors = Colors.bunqGreens + Colors.bunqBlues + Colors.bunqRed
-        //TODO: Change this to CAGradientLayer
-        for color in bunqRainbowColors {
-            let v = UIView()
-            v.backgroundColor = color
-            v.translatesAutoresizingMaskIntoConstraints = false
-            horizontalStackView.addArrangedSubview(v)
-        }
-        view.addSubview(horizontalStackView)
-        horizontalStackView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        horizontalStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        horizontalStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        horizontalStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        bunqView.translatesAutoresizingMaskIntoConstraints = false
+        bunqView.delegate = self
+        view.addSubview(bunqView)
+        bunqView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        bunqView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        bunqView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        bunqView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
         //Logo
         view.addSubview(logoImage)

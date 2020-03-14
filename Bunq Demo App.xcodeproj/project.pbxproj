@@ -16,6 +16,7 @@
 		C33FDF5C2413D09500C65C3F /* MonetaryAccountBankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33FDF5B2413D09500C65C3F /* MonetaryAccountBankModel.swift */; };
 		C33FDF5E2413E89500C65C3F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33FDF5D2413E89500C65C3F /* Response.swift */; };
 		C33FDF602413EAE200C65C3F /* ListMoneyAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33FDF5F2413EAE200C65C3F /* ListMoneyAccounts.swift */; };
+		C357F52B241CC89A00CE740C /* BunqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357F52A241CC89A00CE740C /* BunqView.swift */; };
 		C376728B239402C000EB7A0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376728A239402C000EB7A0B /* AppDelegate.swift */; };
 		C376728F239402C000EB7A0B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376728E239402C000EB7A0B /* SplashViewController.swift */; };
 		C3767294239402C300EB7A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3767293239402C300EB7A0B /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 		C33FDF5B2413D09500C65C3F /* MonetaryAccountBankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetaryAccountBankModel.swift; sourceTree = "<group>"; };
 		C33FDF5D2413E89500C65C3F /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		C33FDF5F2413EAE200C65C3F /* ListMoneyAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMoneyAccounts.swift; sourceTree = "<group>"; };
+		C357F52A241CC89A00CE740C /* BunqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunqView.swift; sourceTree = "<group>"; };
 		C3767287239402C000EB7A0B /* Bunq Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bunq Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C376728A239402C000EB7A0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C376728E239402C000EB7A0B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				C33FDF542413BC9900C65C3F /* ProfileView.xib */,
 				C33FDF562413BCD400C65C3F /* ProfileView.swift */,
+				C357F52A241CC89A00CE740C /* BunqView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				C38F805E23D48529003DCE59 /* JSON+Extension.swift in Sources */,
 				C37672C12394042700EB7A0B /* ServiceConstants.swift in Sources */,
 				C37A014F23DD981F007361AA /* SplashViewModel.swift in Sources */,
+				C357F52B241CC89A00CE740C /* BunqView.swift in Sources */,
 				C33FDF5C2413D09500C65C3F /* MonetaryAccountBankModel.swift in Sources */,
 				C376728F239402C000EB7A0B /* SplashViewController.swift in Sources */,
 				C33FDF602413EAE200C65C3F /* ListMoneyAccounts.swift in Sources */,
