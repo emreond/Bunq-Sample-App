@@ -37,6 +37,7 @@
 		C38F805E23D48529003DCE59 /* JSON+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38F805D23D48529003DCE59 /* JSON+Extension.swift */; };
 		C3A3B71D23DC887C00E36798 /* signature.js in Resources */ = {isa = PBXBuildFile; fileRef = C3A3B71C23DC887C00E36798 /* signature.js */; };
 		C3A3B71F23DCC91600E36798 /* KeyPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3B71E23DCC91600E36798 /* KeyPairs.swift */; };
+		C3B67C46241CEECA00F5C21E /* SwCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B67C45241CEECA00F5C21E /* SwCrypt.swift */; };
 		C3B8F6DA240C07850092FCB1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B8F6D9240C07850092FCB1 /* Colors.swift */; };
 		C3B8F6DC240C14A30092FCB1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B8F6DB240C14A30092FCB1 /* MainViewController.swift */; };
 		C3B8F6E0240C37520092FCB1 /* LinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B8F6DF240C37520092FCB1 /* LinearProgressView.swift */; };
@@ -105,6 +106,7 @@
 		C38F805D23D48529003DCE59 /* JSON+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON+Extension.swift"; sourceTree = "<group>"; };
 		C3A3B71C23DC887C00E36798 /* signature.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = signature.js; sourceTree = "<group>"; };
 		C3A3B71E23DCC91600E36798 /* KeyPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPairs.swift; sourceTree = "<group>"; };
+		C3B67C45241CEECA00F5C21E /* SwCrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwCrypt.swift; sourceTree = "<group>"; };
 		C3B8F6D9240C07850092FCB1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C3B8F6DB240C14A30092FCB1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C3B8F6DF240C37520092FCB1 /* LinearProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressView.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				C3FFEB3F23D3062A00BF8B72 /* JSCommunicationHandler.swift */,
+				C3B67C45241CEECA00F5C21E /* SwCrypt.swift */,
 				C38F805D23D48529003DCE59 /* JSON+Extension.swift */,
 				C3B8F6D9240C07850092FCB1 /* Colors.swift */,
 				C3B8F6DF240C37520092FCB1 /* LinearProgressView.swift */,
@@ -566,6 +569,7 @@
 				C33FDF602413EAE200C65C3F /* ListMoneyAccounts.swift in Sources */,
 				C37672CD23942EFA00EB7A0B /* SandboxService.swift in Sources */,
 				C37672C52394042700EB7A0B /* ServiceRouter.swift in Sources */,
+				C3B67C46241CEECA00F5C21E /* SwCrypt.swift in Sources */,
 				C37672CB2394065B00EB7A0B /* SandBoxUserModel.swift in Sources */,
 				C37672C22394042700EB7A0B /* ServiceCaller.swift in Sources */,
 				C37672C32394042700EB7A0B /* ResponseModel.swift in Sources */,

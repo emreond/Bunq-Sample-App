@@ -24,17 +24,10 @@ class SplashViewModel {
     
     init?(del: SplashViewProtocol) {
         self.delegate = del
-        if let jsSourcePath = Bundle.main.url(forResource: "rsakeygenerator", withExtension: "js") {
-            let jsHandler = JSCommunicationHandler()
-            jsHandler.loadSourceFile(atUrl: jsSourcePath)
-            let returnObject = jsHandler.evaluateJavaScript("myKeyFunction()")!
-            if let dict = returnObject.toObject() as? [String:Any], let pubKey = dict["publicKey"] as? String, let privateKey = dict["privateKey"] as? String {
-                let keyPairs = KeyPairs(publicKey: pubKey, privateKey: privateKey)
-                self.keyPairs = keyPairs
-            } else {
-                return nil
-            }
-        } else {
+        do {
+            let (privateKey, publicKey) = try CC.RSA.generateKeyPair(2048)
+            self.keyPairs = KeyPairs(publicKey: SwKeyConvert.PublicKey.derToPKCS8PEM(publicKey), privateKey: SwKeyConvert.PrivateKey.derToPKCS1PEM(privateKey))
+        } catch {
             return nil
         }
     }
@@ -76,4 +69,18 @@ class SplashViewModel {
         return self.userAccount
     }
     
+}
+extension String {
+    func split(by length: Int) -> [String] {
+        var startIndex = self.startIndex
+        var results = [Substring]()
+        
+        while startIndex < self.endIndex {
+            let endIndex = self.index(startIndex, offsetBy: length, limitedBy: self.endIndex) ?? self.endIndex
+            results.append(self[startIndex..<endIndex])
+            startIndex = endIndex
+        }
+        
+        return results.map { String($0) }
+    }
 }

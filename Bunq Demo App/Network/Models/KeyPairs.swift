@@ -9,8 +9,8 @@
 import Foundation
 
 struct KeyPairs: Codable {
-    let publicKey: String
-    let privateKey: String
+    var publicKey: String
+    var privateKey: String
     
     enum CodingKeys: String, CodingKey {
         case publicKey = "publicKey"

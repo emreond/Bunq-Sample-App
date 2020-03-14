@@ -10,7 +10,6 @@ import UIKit
 import PromiseKit
 class SplashViewController: UIViewController, SplashViewProtocol, BunqViewProtocol {
     
-    
     private var viewModel: SplashViewModel!
 
     private let bunqView = BunqView()
@@ -44,11 +43,11 @@ class SplashViewController: UIViewController, SplashViewProtocol, BunqViewProtoc
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        prepareUI()
         if let unwrappedViewModel = SplashViewModel(del: self) {
             self.viewModel = unwrappedViewModel
         } else { fatalError("there is a problem with creating viewModel") }
-        prepareUI()
+
         viewModel.callService { (result) in
             switch result {
             case .success(let userModel):
