@@ -38,10 +38,10 @@ final class BunqView: UIView {
     }
     
     override func layoutSubviews() {
-        for (index,item) in colorLayers.enumerated() {
+        _ = colorLayers.enumerated().map( { (index,element) -> Void in
             let itemWidth = bounds.size.width / CGFloat(colorLayers.count)
-            item.frame = CGRect(x: (itemWidth * CGFloat(index)), y: 0, width: itemWidth, height: self.frame.height)
-        }
+            element.frame = CGRect(x: (itemWidth * CGFloat(index)), y: 0, width: itemWidth, height: self.frame.height)
+        })
     }
     
     func animateView() {
